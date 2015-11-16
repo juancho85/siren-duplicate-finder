@@ -13,7 +13,7 @@ java -jar duplicates.jar {path/to/file.txt}
 
 The program can be called with an optional parameter: The path to a file containing siren numbers.
 For example:
-java -jar duplicates-0.0.1-SNAPSHOT.jar /usr/sirens.txt
+java -jar duplicates.jar /usr/sirens.txt
 
 If no file is provided, then a default file, that is shipped with the .jar, is used.
 
@@ -21,7 +21,7 @@ If no file is provided, then a default file, that is shipped with the .jar, is u
 Compiling the sources requires having java jdk 1.7 and maven 3.3
 
 ### Java
--install java jdk version 1.7:
+install java jdk version 1.7:
 
 ```
 sudo apt-get install openjdk-7-jdk
@@ -55,7 +55,7 @@ Add the bin directory of the created directory apache-maven-3.3.3 to the PATH en
 export PATH=/opt/apache-maven-3.3.3/bin:$PATH
 ```
 
-Confirm with "mvn -v" in a new shell. The result should look similar to
+Confirm with "mvn -v" in a new shell. The result should look similar to this:
 
 Apache Maven 3.3.3 (7994120775791599e205a5524ec3e0dfe41d4a06; 2015-04-22T13:57:37+02:00)
 Maven home: /home/juancho/Desktop/apache-maven-3.3.3
@@ -69,7 +69,7 @@ Open a shell in the root of the project (siren-duplicate-finder-master)
 ```
 mvn package
 ```
-this will compile the sources and generate a .jar file that can be executed 
+this will compile the sources and generate a .jar file under /target that can be executed as described before.
 
 
 
