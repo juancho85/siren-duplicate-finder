@@ -12,7 +12,7 @@
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-	<jdk.version>1.6</jdk.version>
+	<jdk.version>1.7</jdk.version>
 	<junit.version>4.11</junit.version>
 	<maven-jar-plugin.version>2.6</maven-jar-plugin.version>
   </properties>
@@ -26,14 +26,6 @@
     </dependency>
   </dependencies>
   <build>
-<!--   <resources> -->
-<!--         <resource> -->
-<!--             <directory>src/main/resources</directory> -->
-<!--             <includes> -->
-<!--                 <include>*.txt</include> -->
-<!--             </includes> -->
-<!--         </resource> -->
-<!--     </resources> -->
   	<plugins>
   		<plugin>
         	<groupId>org.apache.maven.plugins</groupId>
@@ -50,6 +42,7 @@
 			<artifactId>maven-jar-plugin</artifactId>
 			<version>${maven-jar-plugin.version}</version>
 			<configuration>
+				 <finalName>duplicates</finalName>
 				 <archive>
 					<manifest>
 						<!-- Jar file entry point -->
